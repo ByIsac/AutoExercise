@@ -1,0 +1,65 @@
+{
+  "registerUser": {
+    "name": "Isac Oliveira",
+    "email": "teste.super@mail.com",
+    "title": "Mr",
+    "pass": "Teste@123",
+    "birthday": {
+        "day": "27",
+        "month": "12",
+        "year": "2003"
+    },
+    "newsletter": "yes",
+    "optin": "no",
+    "company": "Teste",
+    "address1": "Teste",
+    "address2": "Teste",
+    "state": "Lin",
+    "country": "Singapore",
+    "city": "Singapore City",
+    "zipcode": "12345678",
+    "number": "123456789"
+  },
+  "duplicatedUser": {
+    "name": "Goku ssj",
+    "email": "draginball.teste@mail.com",
+    "pass": "Teste@123",
+    "title": "Mr",
+    "birthday": {
+        "day": "27",
+        "month": "12",
+        "year": "2003"
+    },
+    "firstname": "Goku",
+    "lastname": "ssj",
+    "company": "Dragon ball",
+    "address1": "japao",
+    "address2": "japao2",
+    "country": "Canada",
+    "zipcode": "12345678",
+    "state": "Cana",
+    "city": "japao3",
+    "number": "12345678"
+  },
+  "loginUser": {
+    "name": "Gohan ssj",
+    "email": "dragonall.gohan@mail.com",
+    "pass": "Teste@123",
+    "title": "Mr",
+    "birthday": {
+        "day": "27",
+        "month": "12",
+        "year": "2003"
+    },
+    "firstname": "Gohan",
+    "lastname": "ssj",
+    "company": "Dragon ball",
+    "address1": "japao",
+    "address2": "japao2",
+    "country": "Canada",
+    "zipcode": "12345678",
+    "state": "japao",
+    "city": "japao3",
+    "number": "12345678"
+  }
+}
