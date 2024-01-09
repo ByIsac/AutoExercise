@@ -51,13 +51,19 @@ const SignupPage = {
     },
 
     fillFormLogin: function(user) {
-        cy.get(el.loginEmail).type(user.email)
-        cy.get(el.loginPass).type(user.pass)
+        if  (user.email)  cy.get(el.loginEmail).type(user.email)
+        if  (user.pass)  cy.get(el.loginPass).type(user.pass)
     },
 
     submitLoginForm: function(){
         cy.get(el.submitLogin).click()
-    }
+    },
+
+    outputShouldBe: function(msg){
+        cy.get(el.loginEmail)
+          .invoke('prop', 'validationMessage')
+          .should('to.contains', msg.output)
+    },
 
 
 }
