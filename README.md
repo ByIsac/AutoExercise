@@ -9,7 +9,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 <div align="center">
 
   <img src="https://github.com/eiazeez/AETemplate/assets/92765887/29df0283-cda4-4d6c-8907-e80903ba27c0" alt="logo" width="200" height="auto" />
-  <h1>Automation Exercise - Cypress Project IsacOliveira :rocket:</h1>
+  <h1>Automation Exercise - Cypress Project Isac Oliveira :rocket:</h1>
 
   <p>
     Bem-vindo ao projeto Automation Exercise - Cypress! Este projeto é uma estrutura já montada para automação de testes com Cypress no site Automation Exercise. :tada:
