@@ -1,4 +1,6 @@
 import 'cypress-file-upload'
+import SignupPage from './pages/signup'
+import Header from './components/header'
 
 Cypress.Commands.add('apiDelete', (user) => {
 
@@ -46,4 +48,27 @@ Cypress.Commands.add('apiSignup', (user) => {
         expect(response.body).to.contains(201)
         expect(response.body).to.contains('User created!')
     })
+})
+
+Cypress.Commands.add('uiSignup', function(data) {
+    SignupPage.fillSignupForm(data)
+    SignupPage.submitSignupForm()
+    SignupPage.valueShouldBe(data)
+
+    SignupPage.fillForm(data)
+    SignupPage.submit()
+    SignupPage.successfulTxtShouldBe('Account Created!')
+})
+
+Cypress.Commands.add('uiLogin', function(data) {
+    SignupPage.fillFormLogin(data)
+    SignupPage.submitLoginForm()
+
+    const txt = ' Logged in as '+ data.name
+    Header.loggedUserShouldHave(txt)
+})
+
+Cypress.Commands.add('checkFileExistence', function(fileName) {
+    const filePath = Cypress.config('fileServerFolder') + '/cypress/downloads/' + fileName
+    return cy.task('checkFileExistence', filePath)
 })

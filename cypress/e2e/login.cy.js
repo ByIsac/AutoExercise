@@ -59,7 +59,8 @@ describe('Dado de que estou na página de login', function(){
         it('Então deve retornar a mensagem "Your email or password is incorrect!"', function(){
             const bademail = {
                 email: 'testeteste@superteste.com',
-                pass: '123456789'
+                pass: '123456789',
+                message: 'Your email or password is incorrect!'
             }
 
             cy.apiDelete(bademail)
@@ -67,9 +68,10 @@ describe('Dado de que estou na página de login', function(){
             HomePage.go()
             SignupPage.fillFormLogin(bademail)
             SignupPage.submitLoginForm()
-            SignupPage.errorMessageShouldBe(emailMessages)
+            SignupPage.errorMessageShouldBe(bademail.message)
 
         })
+
         const emailMessages = [
             {email: 'emailRuim', output: 'Inclua um "@" no endereço de e-mail.'},
             {email: '1231431245', output: 'Inclua um "@" no endereço de e-mail.'},

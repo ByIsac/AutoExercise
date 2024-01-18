@@ -11,7 +11,10 @@ const Header = {
       cy.get(el.loggedUseIcon)
         .parent()
         .should('have.text', txt)
-   }
+   },
+   logout: function() {
+      cy.get(el.logout).click()
+   },
 
 }
 

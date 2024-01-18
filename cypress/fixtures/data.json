@@ -60,12 +60,37 @@
     "zipcode": "12345678",
     "state": "japao",
     "city": "japao3",
-    "number": "12345678"
+    "number": "12345678",
+    "card": {
+      "number": "1234 5678 1234 5678",
+      "cvc": "321",
+      "month": "01",
+      "year": "2034"
+  }
   },
   "contactUs": {
     "name": "Meu Nome",
     "email": "meuemail@mail.com",
     "subject": "Meu Assunto",
     "message": "Minha mensagem"
+  },
+  
+  "products": {
+    "men_tshirt": {
+      "name": "Men Tshirt",
+      "category": "Men > Tshirts",
+      "price": 400,
+      "availability": "In Stock",
+      "condition": "New",
+      "brand": "H&M"
+    },
+    "sleeveless_dress": {
+      "name": "Sleeveless Dress",
+      "category": "Women > Dress",
+      "price": 1000,
+      "availability": "In Stock",
+      "condition": "New",
+      "brand": "Madame"
+    }
   }
 }

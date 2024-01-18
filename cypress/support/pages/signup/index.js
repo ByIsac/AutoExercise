@@ -1,11 +1,13 @@
 import { el } from './elements'
 
 const SignupPage = {
+    
 
     fillSignupForm: function(user) {
         cy.get(el.inputName).type(user.name)
         cy.get(el.inputEmail).type(user.email)
     },
+
 
     submitSignupForm: function() {
         cy.get(el.signupButton).click()
@@ -65,6 +67,9 @@ const SignupPage = {
           .should('to.contains', msg.output)
     },
 
+    shouldBeVisible: function(){
+        cy.get(el.loginForm).should('be.visible')
+    }
 
 }
 

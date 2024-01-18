@@ -23,9 +23,10 @@ exports.el = {
     number: '#mobile_number',
     submitButton: 'button[data-qa="create-account"]',
     sucessfuMessage: 'h2[data-qa="account-created"]',
-    errorMessage: 'form[action="/signup"] p',
+    errorMessage: '#form form[method="POST"] p',
     loginEmail: 'input[data-qa="login-email"]',
     loginPass: 'input[data-qa="login-password"]',
-    submitLogin: 'button[data-qa="login-button"]'
+    submitLogin: 'button[data-qa="login-button"]',
+    loginForm: '#form'
 
 }
