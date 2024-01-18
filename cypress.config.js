@@ -8,6 +8,7 @@ module.exports = defineConfig({
     viewportHeight: 900,
     experimentalRunAllSpecs: true,
     baseUrl: 'https://automationexercise.com/',
+    projectId: "gonw8a",
     setupNodeEvents(on, config) {
       // implement node event listeners here
       on('task', {
