@@ -5,15 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false 
-      matrix:
-        containers: [1, 2]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          start: npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }}
+          start: npx cypress run --browser chrome --record --key ${{ secrets.CYPRESS_RECORD_KEY }}
           wait-on: 'http://localhost:3000'
           record: true
           parallel: true
